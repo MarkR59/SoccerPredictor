@@ -7,7 +7,7 @@ from src.utils import save_processed_data
 
 def main():
     # Load raw data
-    raw_data_path = 'data/raw/your_raw_csv_file.csv'
+    raw_data_path = 'data/raw/Prem23.csv'
     df = load_data(raw_data_path)
     
     # Process data
@@ -17,7 +17,7 @@ def main():
     df = add_match_outcomes(df)
     
     # Save processed data
-    processed_data_path = 'data/processed/processed_data.csv'
+    processed_data_path = 'data/processed/Prem23_processed.csv'
     save_processed_data(df, processed_data_path)
     
     # Prepare features and target

@@ -1,4 +1,3 @@
-# Function to calculate team form
 def calculate_team_form(df, team, num_matches=5):
     team_matches = df[(df['HomeTeam'] == team) | (df['AwayTeam'] == team)]
     team_matches = team_matches.sort_values(by='Date', ascending=False).head(num_matches)
